@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Bootstrap + JavaScript!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Bootstrap + JavaScript!</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-</head>
+  <body>
+    <div class="card-group" id="myHTMLbody" onload="init()">
+      <div class="card" style="width: 18rem">
+        <img src="./assets/image/add.png" class="card-img-top" alt="Add" />
+        <span
+          onclick="incrementNumberOfCard()"
+          style="background-color: #35e146; padding: 0.5em"
+          >ADD CARD</span
+        >
+      </div>
+    </div>
+  </body>
 
-<body>
-  <div class="card-group">
-  </div>
-</body>
-
-<script>
-  class myJavaScriptClass {
-    contructor(data){
-      this.data = data;
-    }
-    //data setter?
-    //data getter?
-    //data something?
-  }
-  const data = [
-    { title: 'Card Title', description: 'Card Description' }
-  ];
-  const jsClass = new myJavaScriptClass(data);
-  // jsClass.render ?
-  // jsClass.somethingsomething?
-</script>
-
+  <script src="./assets/js/custom.js"></script>
 </html>
